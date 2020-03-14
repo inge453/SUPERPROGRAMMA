@@ -159,7 +159,6 @@ Partial Class Form1
         Me.AnteprimeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.modeldef_panel = New System.Windows.Forms.Panel()
         Me.decorate_panel = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.weapon_kickback = New System.Windows.Forms.NumericUpDown()
         Me.Label65 = New System.Windows.Forms.Label()
@@ -1657,7 +1656,6 @@ Partial Class Form1
         '
         'decorate_panel
         '
-        Me.decorate_panel.Controls.Add(Me.Button2)
         Me.decorate_panel.Controls.Add(Me.GroupBox1)
         Me.decorate_panel.Controls.Add(Me.selection_box)
         Me.decorate_panel.Controls.Add(Me.ammo_box)
@@ -1667,16 +1665,6 @@ Partial Class Form1
         Me.decorate_panel.Name = "decorate_panel"
         Me.decorate_panel.Size = New System.Drawing.Size(933, 654)
         Me.decorate_panel.TabIndex = 29
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(147, 433)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -2104,9 +2092,9 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1253, 743)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.anteprima_panel)
         Me.Controls.Add(Me.decorate_panel)
         Me.Controls.Add(Me.modeldef_panel)
+        Me.Controls.Add(Me.anteprima_panel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -2389,7 +2377,6 @@ Partial Class Form1
     Friend WithEvents Label56 As Label
     Friend WithEvents Label57 As Label
     Friend WithEvents pickup_message As TextBox
-    Friend WithEvents Button2 As Button
     Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents weapon_kickback As NumericUpDown
     Friend WithEvents Label65 As Label
