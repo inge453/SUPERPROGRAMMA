@@ -1085,5 +1085,7 @@ Public Class Form1
         genera_modeldef(False)
     End Sub
 
+    Function asdas()
 
+    End Function
 End Class
