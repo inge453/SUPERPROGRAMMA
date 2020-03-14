@@ -200,7 +200,6 @@ Partial Class Form1
         Me.anteprima_panel = New System.Windows.Forms.Panel()
         Me.Label67 = New System.Windows.Forms.Label()
         Me.Label66 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.SurfaceSKin0, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -284,7 +283,7 @@ Partial Class Form1
         'RichTextBox1
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(14, 30)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(678, 216)
         Me.RichTextBox1.TabIndex = 9
@@ -304,7 +303,7 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Controls.Add(Me.TabPage6)
         Me.TabControl1.Location = New System.Drawing.Point(260, 2)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(436, 139)
@@ -323,9 +322,9 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.sf0_roughness)
         Me.TabPage1.Controls.Add(Me.sf0_metallic)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage1.Size = New System.Drawing.Size(428, 113)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "SurfaceSkin 0"
@@ -386,7 +385,7 @@ Partial Class Form1
         Me.SurfaceSKin0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SurfaceSKin0.InitialImage = Nothing
         Me.SurfaceSKin0.Location = New System.Drawing.Point(4, 5)
-        Me.SurfaceSKin0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SurfaceSKin0.Margin = New System.Windows.Forms.Padding(2)
         Me.SurfaceSKin0.Name = "SurfaceSKin0"
         Me.SurfaceSKin0.Size = New System.Drawing.Size(73, 79)
         Me.SurfaceSKin0.TabIndex = 0
@@ -395,7 +394,7 @@ Partial Class Form1
         'sf0_ao
         '
         Me.sf0_ao.Location = New System.Drawing.Point(350, 5)
-        Me.sf0_ao.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf0_ao.Margin = New System.Windows.Forms.Padding(2)
         Me.sf0_ao.Name = "sf0_ao"
         Me.sf0_ao.Size = New System.Drawing.Size(73, 79)
         Me.sf0_ao.TabIndex = 4
@@ -404,7 +403,7 @@ Partial Class Form1
         'sf0_normal
         '
         Me.sf0_normal.Location = New System.Drawing.Point(118, 5)
-        Me.sf0_normal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf0_normal.Margin = New System.Windows.Forms.Padding(2)
         Me.sf0_normal.Name = "sf0_normal"
         Me.sf0_normal.Size = New System.Drawing.Size(73, 79)
         Me.sf0_normal.TabIndex = 1
@@ -413,7 +412,7 @@ Partial Class Form1
         'sf0_roughness
         '
         Me.sf0_roughness.Location = New System.Drawing.Point(273, 5)
-        Me.sf0_roughness.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf0_roughness.Margin = New System.Windows.Forms.Padding(2)
         Me.sf0_roughness.Name = "sf0_roughness"
         Me.sf0_roughness.Size = New System.Drawing.Size(73, 79)
         Me.sf0_roughness.TabIndex = 3
@@ -422,7 +421,7 @@ Partial Class Form1
         'sf0_metallic
         '
         Me.sf0_metallic.Location = New System.Drawing.Point(196, 5)
-        Me.sf0_metallic.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf0_metallic.Margin = New System.Windows.Forms.Padding(2)
         Me.sf0_metallic.Name = "sf0_metallic"
         Me.sf0_metallic.Size = New System.Drawing.Size(73, 79)
         Me.sf0_metallic.TabIndex = 2
@@ -441,9 +440,9 @@ Partial Class Form1
         Me.TabPage2.Controls.Add(Me.sf1_roughness)
         Me.TabPage2.Controls.Add(Me.sf1_metallic)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage2.Size = New System.Drawing.Size(428, 113)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "SurfaceSkin 1"
@@ -504,7 +503,7 @@ Partial Class Form1
         Me.SurfaceSkin1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SurfaceSkin1.InitialImage = Nothing
         Me.SurfaceSkin1.Location = New System.Drawing.Point(4, 5)
-        Me.SurfaceSkin1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SurfaceSkin1.Margin = New System.Windows.Forms.Padding(2)
         Me.SurfaceSkin1.Name = "SurfaceSkin1"
         Me.SurfaceSkin1.Size = New System.Drawing.Size(73, 79)
         Me.SurfaceSkin1.TabIndex = 0
@@ -513,7 +512,7 @@ Partial Class Form1
         'sf1_ao
         '
         Me.sf1_ao.Location = New System.Drawing.Point(350, 5)
-        Me.sf1_ao.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf1_ao.Margin = New System.Windows.Forms.Padding(2)
         Me.sf1_ao.Name = "sf1_ao"
         Me.sf1_ao.Size = New System.Drawing.Size(73, 79)
         Me.sf1_ao.TabIndex = 4
@@ -522,7 +521,7 @@ Partial Class Form1
         'sf1_normal
         '
         Me.sf1_normal.Location = New System.Drawing.Point(118, 5)
-        Me.sf1_normal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf1_normal.Margin = New System.Windows.Forms.Padding(2)
         Me.sf1_normal.Name = "sf1_normal"
         Me.sf1_normal.Size = New System.Drawing.Size(73, 79)
         Me.sf1_normal.TabIndex = 1
@@ -531,7 +530,7 @@ Partial Class Form1
         'sf1_roughness
         '
         Me.sf1_roughness.Location = New System.Drawing.Point(273, 5)
-        Me.sf1_roughness.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf1_roughness.Margin = New System.Windows.Forms.Padding(2)
         Me.sf1_roughness.Name = "sf1_roughness"
         Me.sf1_roughness.Size = New System.Drawing.Size(73, 79)
         Me.sf1_roughness.TabIndex = 3
@@ -540,7 +539,7 @@ Partial Class Form1
         'sf1_metallic
         '
         Me.sf1_metallic.Location = New System.Drawing.Point(196, 5)
-        Me.sf1_metallic.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf1_metallic.Margin = New System.Windows.Forms.Padding(2)
         Me.sf1_metallic.Name = "sf1_metallic"
         Me.sf1_metallic.Size = New System.Drawing.Size(73, 79)
         Me.sf1_metallic.TabIndex = 2
@@ -559,9 +558,9 @@ Partial Class Form1
         Me.TabPage3.Controls.Add(Me.sf2_roughness)
         Me.TabPage3.Controls.Add(Me.sf2_metallic)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage3.Size = New System.Drawing.Size(428, 113)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "SurfaceSkin 2"
@@ -622,7 +621,7 @@ Partial Class Form1
         Me.SurfaceSkin2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SurfaceSkin2.InitialImage = Nothing
         Me.SurfaceSkin2.Location = New System.Drawing.Point(4, 5)
-        Me.SurfaceSkin2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SurfaceSkin2.Margin = New System.Windows.Forms.Padding(2)
         Me.SurfaceSkin2.Name = "SurfaceSkin2"
         Me.SurfaceSkin2.Size = New System.Drawing.Size(73, 79)
         Me.SurfaceSkin2.TabIndex = 0
@@ -631,7 +630,7 @@ Partial Class Form1
         'sf2_ao
         '
         Me.sf2_ao.Location = New System.Drawing.Point(350, 5)
-        Me.sf2_ao.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf2_ao.Margin = New System.Windows.Forms.Padding(2)
         Me.sf2_ao.Name = "sf2_ao"
         Me.sf2_ao.Size = New System.Drawing.Size(73, 79)
         Me.sf2_ao.TabIndex = 4
@@ -640,7 +639,7 @@ Partial Class Form1
         'sf2_normal
         '
         Me.sf2_normal.Location = New System.Drawing.Point(118, 5)
-        Me.sf2_normal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf2_normal.Margin = New System.Windows.Forms.Padding(2)
         Me.sf2_normal.Name = "sf2_normal"
         Me.sf2_normal.Size = New System.Drawing.Size(73, 79)
         Me.sf2_normal.TabIndex = 1
@@ -649,7 +648,7 @@ Partial Class Form1
         'sf2_roughness
         '
         Me.sf2_roughness.Location = New System.Drawing.Point(273, 5)
-        Me.sf2_roughness.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf2_roughness.Margin = New System.Windows.Forms.Padding(2)
         Me.sf2_roughness.Name = "sf2_roughness"
         Me.sf2_roughness.Size = New System.Drawing.Size(73, 79)
         Me.sf2_roughness.TabIndex = 3
@@ -658,7 +657,7 @@ Partial Class Form1
         'sf2_metallic
         '
         Me.sf2_metallic.Location = New System.Drawing.Point(196, 5)
-        Me.sf2_metallic.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf2_metallic.Margin = New System.Windows.Forms.Padding(2)
         Me.sf2_metallic.Name = "sf2_metallic"
         Me.sf2_metallic.Size = New System.Drawing.Size(73, 79)
         Me.sf2_metallic.TabIndex = 2
@@ -677,9 +676,9 @@ Partial Class Form1
         Me.TabPage4.Controls.Add(Me.sf3_roughness)
         Me.TabPage4.Controls.Add(Me.sf3_metallic)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage4.Size = New System.Drawing.Size(428, 113)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "SurfaceSkin 3"
@@ -740,7 +739,7 @@ Partial Class Form1
         Me.SurfaceSkin3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SurfaceSkin3.InitialImage = Nothing
         Me.SurfaceSkin3.Location = New System.Drawing.Point(4, 5)
-        Me.SurfaceSkin3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SurfaceSkin3.Margin = New System.Windows.Forms.Padding(2)
         Me.SurfaceSkin3.Name = "SurfaceSkin3"
         Me.SurfaceSkin3.Size = New System.Drawing.Size(73, 79)
         Me.SurfaceSkin3.TabIndex = 0
@@ -749,7 +748,7 @@ Partial Class Form1
         'sf3_ao
         '
         Me.sf3_ao.Location = New System.Drawing.Point(350, 5)
-        Me.sf3_ao.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf3_ao.Margin = New System.Windows.Forms.Padding(2)
         Me.sf3_ao.Name = "sf3_ao"
         Me.sf3_ao.Size = New System.Drawing.Size(73, 79)
         Me.sf3_ao.TabIndex = 4
@@ -758,7 +757,7 @@ Partial Class Form1
         'sf3_normal
         '
         Me.sf3_normal.Location = New System.Drawing.Point(118, 5)
-        Me.sf3_normal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf3_normal.Margin = New System.Windows.Forms.Padding(2)
         Me.sf3_normal.Name = "sf3_normal"
         Me.sf3_normal.Size = New System.Drawing.Size(73, 79)
         Me.sf3_normal.TabIndex = 1
@@ -767,7 +766,7 @@ Partial Class Form1
         'sf3_roughness
         '
         Me.sf3_roughness.Location = New System.Drawing.Point(273, 5)
-        Me.sf3_roughness.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf3_roughness.Margin = New System.Windows.Forms.Padding(2)
         Me.sf3_roughness.Name = "sf3_roughness"
         Me.sf3_roughness.Size = New System.Drawing.Size(73, 79)
         Me.sf3_roughness.TabIndex = 3
@@ -776,7 +775,7 @@ Partial Class Form1
         'sf3_metallic
         '
         Me.sf3_metallic.Location = New System.Drawing.Point(196, 5)
-        Me.sf3_metallic.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf3_metallic.Margin = New System.Windows.Forms.Padding(2)
         Me.sf3_metallic.Name = "sf3_metallic"
         Me.sf3_metallic.Size = New System.Drawing.Size(73, 79)
         Me.sf3_metallic.TabIndex = 2
@@ -795,9 +794,9 @@ Partial Class Form1
         Me.TabPage5.Controls.Add(Me.sf4_roughness)
         Me.TabPage5.Controls.Add(Me.sf4_metallic)
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage5.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage5.Size = New System.Drawing.Size(428, 113)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "SurfaceSkin 4"
@@ -858,7 +857,7 @@ Partial Class Form1
         Me.SurfaceSkin4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SurfaceSkin4.InitialImage = Nothing
         Me.SurfaceSkin4.Location = New System.Drawing.Point(4, 5)
-        Me.SurfaceSkin4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SurfaceSkin4.Margin = New System.Windows.Forms.Padding(2)
         Me.SurfaceSkin4.Name = "SurfaceSkin4"
         Me.SurfaceSkin4.Size = New System.Drawing.Size(73, 79)
         Me.SurfaceSkin4.TabIndex = 0
@@ -867,7 +866,7 @@ Partial Class Form1
         'sf4_ao
         '
         Me.sf4_ao.Location = New System.Drawing.Point(350, 5)
-        Me.sf4_ao.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf4_ao.Margin = New System.Windows.Forms.Padding(2)
         Me.sf4_ao.Name = "sf4_ao"
         Me.sf4_ao.Size = New System.Drawing.Size(73, 79)
         Me.sf4_ao.TabIndex = 4
@@ -876,7 +875,7 @@ Partial Class Form1
         'sf4_normal
         '
         Me.sf4_normal.Location = New System.Drawing.Point(118, 5)
-        Me.sf4_normal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf4_normal.Margin = New System.Windows.Forms.Padding(2)
         Me.sf4_normal.Name = "sf4_normal"
         Me.sf4_normal.Size = New System.Drawing.Size(73, 79)
         Me.sf4_normal.TabIndex = 1
@@ -885,7 +884,7 @@ Partial Class Form1
         'sf4_roughness
         '
         Me.sf4_roughness.Location = New System.Drawing.Point(273, 5)
-        Me.sf4_roughness.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf4_roughness.Margin = New System.Windows.Forms.Padding(2)
         Me.sf4_roughness.Name = "sf4_roughness"
         Me.sf4_roughness.Size = New System.Drawing.Size(73, 79)
         Me.sf4_roughness.TabIndex = 3
@@ -894,7 +893,7 @@ Partial Class Form1
         'sf4_metallic
         '
         Me.sf4_metallic.Location = New System.Drawing.Point(196, 5)
-        Me.sf4_metallic.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf4_metallic.Margin = New System.Windows.Forms.Padding(2)
         Me.sf4_metallic.Name = "sf4_metallic"
         Me.sf4_metallic.Size = New System.Drawing.Size(73, 79)
         Me.sf4_metallic.TabIndex = 2
@@ -913,9 +912,9 @@ Partial Class Form1
         Me.TabPage6.Controls.Add(Me.sf5_roughness)
         Me.TabPage6.Controls.Add(Me.sf5_metallic)
         Me.TabPage6.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage6.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage6.Size = New System.Drawing.Size(428, 113)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "SurfaceSkin 5"
@@ -976,7 +975,7 @@ Partial Class Form1
         Me.SurfaceSkin5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SurfaceSkin5.InitialImage = Nothing
         Me.SurfaceSkin5.Location = New System.Drawing.Point(4, 5)
-        Me.SurfaceSkin5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SurfaceSkin5.Margin = New System.Windows.Forms.Padding(2)
         Me.SurfaceSkin5.Name = "SurfaceSkin5"
         Me.SurfaceSkin5.Size = New System.Drawing.Size(73, 79)
         Me.SurfaceSkin5.TabIndex = 0
@@ -985,7 +984,7 @@ Partial Class Form1
         'sf5_ao
         '
         Me.sf5_ao.Location = New System.Drawing.Point(350, 5)
-        Me.sf5_ao.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf5_ao.Margin = New System.Windows.Forms.Padding(2)
         Me.sf5_ao.Name = "sf5_ao"
         Me.sf5_ao.Size = New System.Drawing.Size(73, 79)
         Me.sf5_ao.TabIndex = 4
@@ -994,7 +993,7 @@ Partial Class Form1
         'sf5_normal
         '
         Me.sf5_normal.Location = New System.Drawing.Point(118, 5)
-        Me.sf5_normal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf5_normal.Margin = New System.Windows.Forms.Padding(2)
         Me.sf5_normal.Name = "sf5_normal"
         Me.sf5_normal.Size = New System.Drawing.Size(73, 79)
         Me.sf5_normal.TabIndex = 1
@@ -1003,7 +1002,7 @@ Partial Class Form1
         'sf5_roughness
         '
         Me.sf5_roughness.Location = New System.Drawing.Point(273, 5)
-        Me.sf5_roughness.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf5_roughness.Margin = New System.Windows.Forms.Padding(2)
         Me.sf5_roughness.Name = "sf5_roughness"
         Me.sf5_roughness.Size = New System.Drawing.Size(73, 79)
         Me.sf5_roughness.TabIndex = 3
@@ -1012,7 +1011,7 @@ Partial Class Form1
         'sf5_metallic
         '
         Me.sf5_metallic.Location = New System.Drawing.Point(196, 5)
-        Me.sf5_metallic.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.sf5_metallic.Margin = New System.Windows.Forms.Padding(2)
         Me.sf5_metallic.Name = "sf5_metallic"
         Me.sf5_metallic.Size = New System.Drawing.Size(73, 79)
         Me.sf5_metallic.TabIndex = 2
@@ -1021,7 +1020,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(2, 3)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(81, 19)
         Me.Button1.TabIndex = 8
@@ -1055,7 +1054,7 @@ Partial Class Form1
         'idle_fine
         '
         Me.idle_fine.Location = New System.Drawing.Point(230, 19)
-        Me.idle_fine.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.idle_fine.Margin = New System.Windows.Forms.Padding(2)
         Me.idle_fine.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.idle_fine.Name = "idle_fine"
         Me.idle_fine.Size = New System.Drawing.Size(43, 20)
@@ -1065,7 +1064,7 @@ Partial Class Form1
         '
         Me.idle_text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.idle_text.Location = New System.Drawing.Point(65, 19)
-        Me.idle_text.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.idle_text.Margin = New System.Windows.Forms.Padding(2)
         Me.idle_text.MaxLength = 4
         Me.idle_text.Name = "idle_text"
         Me.idle_text.Size = New System.Drawing.Size(36, 20)
@@ -1075,7 +1074,7 @@ Partial Class Form1
         'idle_inizio
         '
         Me.idle_inizio.Location = New System.Drawing.Point(155, 19)
-        Me.idle_inizio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.idle_inizio.Margin = New System.Windows.Forms.Padding(2)
         Me.idle_inizio.Name = "idle_inizio"
         Me.idle_inizio.Size = New System.Drawing.Size(43, 20)
         Me.idle_inizio.TabIndex = 14
@@ -1105,9 +1104,9 @@ Partial Class Form1
         Me.frameindex_generator_groupbox.Controls.Add(Me.idle_check)
         Me.frameindex_generator_groupbox.Controls.Add(Me.idle_groupbox)
         Me.frameindex_generator_groupbox.Location = New System.Drawing.Point(260, 146)
-        Me.frameindex_generator_groupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.frameindex_generator_groupbox.Margin = New System.Windows.Forms.Padding(2)
         Me.frameindex_generator_groupbox.Name = "frameindex_generator_groupbox"
-        Me.frameindex_generator_groupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.frameindex_generator_groupbox.Padding = New System.Windows.Forms.Padding(2)
         Me.frameindex_generator_groupbox.Size = New System.Drawing.Size(434, 329)
         Me.frameindex_generator_groupbox.TabIndex = 19
         Me.frameindex_generator_groupbox.TabStop = False
@@ -1117,7 +1116,7 @@ Partial Class Form1
         '
         Me.custom2_check.AutoSize = True
         Me.custom2_check.Location = New System.Drawing.Point(304, 292)
-        Me.custom2_check.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom2_check.Margin = New System.Windows.Forms.Padding(2)
         Me.custom2_check.Name = "custom2_check"
         Me.custom2_check.Size = New System.Drawing.Size(70, 17)
         Me.custom2_check.TabIndex = 32
@@ -1134,9 +1133,9 @@ Partial Class Form1
         Me.custom2_groupbox.Controls.Add(Me.Label19)
         Me.custom2_groupbox.Enabled = False
         Me.custom2_groupbox.Location = New System.Drawing.Point(4, 272)
-        Me.custom2_groupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom2_groupbox.Margin = New System.Windows.Forms.Padding(2)
         Me.custom2_groupbox.Name = "custom2_groupbox"
-        Me.custom2_groupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom2_groupbox.Padding = New System.Windows.Forms.Padding(2)
         Me.custom2_groupbox.Size = New System.Drawing.Size(288, 46)
         Me.custom2_groupbox.TabIndex = 31
         Me.custom2_groupbox.TabStop = False
@@ -1156,7 +1155,7 @@ Partial Class Form1
         '
         Me.custom2_text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.custom2_text.Location = New System.Drawing.Point(65, 19)
-        Me.custom2_text.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom2_text.Margin = New System.Windows.Forms.Padding(2)
         Me.custom2_text.MaxLength = 4
         Me.custom2_text.Name = "custom2_text"
         Me.custom2_text.Size = New System.Drawing.Size(36, 20)
@@ -1166,7 +1165,7 @@ Partial Class Form1
         'custom2_fine
         '
         Me.custom2_fine.Location = New System.Drawing.Point(230, 19)
-        Me.custom2_fine.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom2_fine.Margin = New System.Windows.Forms.Padding(2)
         Me.custom2_fine.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.custom2_fine.Name = "custom2_fine"
         Me.custom2_fine.Size = New System.Drawing.Size(43, 20)
@@ -1185,7 +1184,7 @@ Partial Class Form1
         'custom2_inizio
         '
         Me.custom2_inizio.Location = New System.Drawing.Point(155, 19)
-        Me.custom2_inizio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom2_inizio.Margin = New System.Windows.Forms.Padding(2)
         Me.custom2_inizio.Name = "custom2_inizio"
         Me.custom2_inizio.Size = New System.Drawing.Size(43, 20)
         Me.custom2_inizio.TabIndex = 14
@@ -1204,7 +1203,7 @@ Partial Class Form1
         '
         Me.custom1_check.AutoSize = True
         Me.custom1_check.Location = New System.Drawing.Point(304, 239)
-        Me.custom1_check.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom1_check.Margin = New System.Windows.Forms.Padding(2)
         Me.custom1_check.Name = "custom1_check"
         Me.custom1_check.Size = New System.Drawing.Size(70, 17)
         Me.custom1_check.TabIndex = 30
@@ -1221,9 +1220,9 @@ Partial Class Form1
         Me.custom1_groupbox.Controls.Add(Me.Label16)
         Me.custom1_groupbox.Enabled = False
         Me.custom1_groupbox.Location = New System.Drawing.Point(4, 219)
-        Me.custom1_groupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom1_groupbox.Margin = New System.Windows.Forms.Padding(2)
         Me.custom1_groupbox.Name = "custom1_groupbox"
-        Me.custom1_groupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom1_groupbox.Padding = New System.Windows.Forms.Padding(2)
         Me.custom1_groupbox.Size = New System.Drawing.Size(288, 46)
         Me.custom1_groupbox.TabIndex = 29
         Me.custom1_groupbox.TabStop = False
@@ -1243,7 +1242,7 @@ Partial Class Form1
         '
         Me.custom1_text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.custom1_text.Location = New System.Drawing.Point(65, 19)
-        Me.custom1_text.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom1_text.Margin = New System.Windows.Forms.Padding(2)
         Me.custom1_text.MaxLength = 4
         Me.custom1_text.Name = "custom1_text"
         Me.custom1_text.Size = New System.Drawing.Size(36, 20)
@@ -1253,7 +1252,7 @@ Partial Class Form1
         'custom1_fine
         '
         Me.custom1_fine.Location = New System.Drawing.Point(230, 19)
-        Me.custom1_fine.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom1_fine.Margin = New System.Windows.Forms.Padding(2)
         Me.custom1_fine.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.custom1_fine.Name = "custom1_fine"
         Me.custom1_fine.Size = New System.Drawing.Size(43, 20)
@@ -1272,7 +1271,7 @@ Partial Class Form1
         'custom1_inizio
         '
         Me.custom1_inizio.Location = New System.Drawing.Point(155, 19)
-        Me.custom1_inizio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.custom1_inizio.Margin = New System.Windows.Forms.Padding(2)
         Me.custom1_inizio.Name = "custom1_inizio"
         Me.custom1_inizio.Size = New System.Drawing.Size(43, 20)
         Me.custom1_inizio.TabIndex = 14
@@ -1291,7 +1290,7 @@ Partial Class Form1
         '
         Me.deselect_check.AutoSize = True
         Me.deselect_check.Location = New System.Drawing.Point(304, 188)
-        Me.deselect_check.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.deselect_check.Margin = New System.Windows.Forms.Padding(2)
         Me.deselect_check.Name = "deselect_check"
         Me.deselect_check.Size = New System.Drawing.Size(82, 17)
         Me.deselect_check.TabIndex = 28
@@ -1308,9 +1307,9 @@ Partial Class Form1
         Me.deselect_groupbox.Controls.Add(Me.Label13)
         Me.deselect_groupbox.Enabled = False
         Me.deselect_groupbox.Location = New System.Drawing.Point(4, 168)
-        Me.deselect_groupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.deselect_groupbox.Margin = New System.Windows.Forms.Padding(2)
         Me.deselect_groupbox.Name = "deselect_groupbox"
-        Me.deselect_groupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.deselect_groupbox.Padding = New System.Windows.Forms.Padding(2)
         Me.deselect_groupbox.Size = New System.Drawing.Size(288, 46)
         Me.deselect_groupbox.TabIndex = 27
         Me.deselect_groupbox.TabStop = False
@@ -1330,7 +1329,7 @@ Partial Class Form1
         '
         Me.deselect_text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.deselect_text.Location = New System.Drawing.Point(65, 19)
-        Me.deselect_text.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.deselect_text.Margin = New System.Windows.Forms.Padding(2)
         Me.deselect_text.MaxLength = 4
         Me.deselect_text.Name = "deselect_text"
         Me.deselect_text.Size = New System.Drawing.Size(36, 20)
@@ -1340,7 +1339,7 @@ Partial Class Form1
         'deselect_fine
         '
         Me.deselect_fine.Location = New System.Drawing.Point(230, 19)
-        Me.deselect_fine.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.deselect_fine.Margin = New System.Windows.Forms.Padding(2)
         Me.deselect_fine.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.deselect_fine.Name = "deselect_fine"
         Me.deselect_fine.Size = New System.Drawing.Size(43, 20)
@@ -1359,7 +1358,7 @@ Partial Class Form1
         'deselect_inizio
         '
         Me.deselect_inizio.Location = New System.Drawing.Point(155, 19)
-        Me.deselect_inizio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.deselect_inizio.Margin = New System.Windows.Forms.Padding(2)
         Me.deselect_inizio.Name = "deselect_inizio"
         Me.deselect_inizio.Size = New System.Drawing.Size(43, 20)
         Me.deselect_inizio.TabIndex = 14
@@ -1378,7 +1377,7 @@ Partial Class Form1
         '
         Me.select_check.AutoSize = True
         Me.select_check.Location = New System.Drawing.Point(304, 138)
-        Me.select_check.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.select_check.Margin = New System.Windows.Forms.Padding(2)
         Me.select_check.Name = "select_check"
         Me.select_check.Size = New System.Drawing.Size(67, 17)
         Me.select_check.TabIndex = 26
@@ -1395,9 +1394,9 @@ Partial Class Form1
         Me.select_groupbox.Controls.Add(Me.Label10)
         Me.select_groupbox.Enabled = False
         Me.select_groupbox.Location = New System.Drawing.Point(4, 118)
-        Me.select_groupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.select_groupbox.Margin = New System.Windows.Forms.Padding(2)
         Me.select_groupbox.Name = "select_groupbox"
-        Me.select_groupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.select_groupbox.Padding = New System.Windows.Forms.Padding(2)
         Me.select_groupbox.Size = New System.Drawing.Size(288, 46)
         Me.select_groupbox.TabIndex = 25
         Me.select_groupbox.TabStop = False
@@ -1417,7 +1416,7 @@ Partial Class Form1
         '
         Me.select_text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.select_text.Location = New System.Drawing.Point(65, 19)
-        Me.select_text.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.select_text.Margin = New System.Windows.Forms.Padding(2)
         Me.select_text.MaxLength = 4
         Me.select_text.Name = "select_text"
         Me.select_text.Size = New System.Drawing.Size(36, 20)
@@ -1427,7 +1426,7 @@ Partial Class Form1
         'select_fine
         '
         Me.select_fine.Location = New System.Drawing.Point(230, 19)
-        Me.select_fine.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.select_fine.Margin = New System.Windows.Forms.Padding(2)
         Me.select_fine.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.select_fine.Name = "select_fine"
         Me.select_fine.Size = New System.Drawing.Size(43, 20)
@@ -1446,7 +1445,7 @@ Partial Class Form1
         'select_inizio
         '
         Me.select_inizio.Location = New System.Drawing.Point(155, 19)
-        Me.select_inizio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.select_inizio.Margin = New System.Windows.Forms.Padding(2)
         Me.select_inizio.Name = "select_inizio"
         Me.select_inizio.Size = New System.Drawing.Size(43, 20)
         Me.select_inizio.TabIndex = 14
@@ -1465,7 +1464,7 @@ Partial Class Form1
         '
         Me.fire_check.AutoSize = True
         Me.fire_check.Location = New System.Drawing.Point(304, 88)
-        Me.fire_check.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.fire_check.Margin = New System.Windows.Forms.Padding(2)
         Me.fire_check.Name = "fire_check"
         Me.fire_check.Size = New System.Drawing.Size(50, 17)
         Me.fire_check.TabIndex = 24
@@ -1482,9 +1481,9 @@ Partial Class Form1
         Me.fire_groupbox.Controls.Add(Me.Label7)
         Me.fire_groupbox.Enabled = False
         Me.fire_groupbox.Location = New System.Drawing.Point(4, 67)
-        Me.fire_groupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.fire_groupbox.Margin = New System.Windows.Forms.Padding(2)
         Me.fire_groupbox.Name = "fire_groupbox"
-        Me.fire_groupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.fire_groupbox.Padding = New System.Windows.Forms.Padding(2)
         Me.fire_groupbox.Size = New System.Drawing.Size(288, 46)
         Me.fire_groupbox.TabIndex = 23
         Me.fire_groupbox.TabStop = False
@@ -1504,7 +1503,7 @@ Partial Class Form1
         '
         Me.fire_text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.fire_text.Location = New System.Drawing.Point(65, 19)
-        Me.fire_text.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.fire_text.Margin = New System.Windows.Forms.Padding(2)
         Me.fire_text.MaxLength = 4
         Me.fire_text.Name = "fire_text"
         Me.fire_text.Size = New System.Drawing.Size(36, 20)
@@ -1514,7 +1513,7 @@ Partial Class Form1
         'fire_fine
         '
         Me.fire_fine.Location = New System.Drawing.Point(230, 19)
-        Me.fire_fine.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.fire_fine.Margin = New System.Windows.Forms.Padding(2)
         Me.fire_fine.Maximum = New Decimal(New Integer() {9999, 0, 0, 0})
         Me.fire_fine.Name = "fire_fine"
         Me.fire_fine.Size = New System.Drawing.Size(43, 20)
@@ -1533,7 +1532,7 @@ Partial Class Form1
         'fire_inizio
         '
         Me.fire_inizio.Location = New System.Drawing.Point(155, 19)
-        Me.fire_inizio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.fire_inizio.Margin = New System.Windows.Forms.Padding(2)
         Me.fire_inizio.Name = "fire_inizio"
         Me.fire_inizio.Size = New System.Drawing.Size(43, 20)
         Me.fire_inizio.TabIndex = 14
@@ -1553,7 +1552,7 @@ Partial Class Form1
         Me.idle_check.AutoSize = True
         Me.idle_check.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.idle_check.Location = New System.Drawing.Point(304, 37)
-        Me.idle_check.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.idle_check.Margin = New System.Windows.Forms.Padding(2)
         Me.idle_check.Name = "idle_check"
         Me.idle_check.Size = New System.Drawing.Size(56, 18)
         Me.idle_check.TabIndex = 22
@@ -1570,9 +1569,9 @@ Partial Class Form1
         Me.idle_groupbox.Controls.Add(Me.Label2)
         Me.idle_groupbox.Enabled = False
         Me.idle_groupbox.Location = New System.Drawing.Point(4, 17)
-        Me.idle_groupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.idle_groupbox.Margin = New System.Windows.Forms.Padding(2)
         Me.idle_groupbox.Name = "idle_groupbox"
-        Me.idle_groupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.idle_groupbox.Padding = New System.Windows.Forms.Padding(2)
         Me.idle_groupbox.Size = New System.Drawing.Size(288, 46)
         Me.idle_groupbox.TabIndex = 21
         Me.idle_groupbox.TabStop = False
@@ -1582,7 +1581,7 @@ Partial Class Form1
         '
         Me.AngleOffset.AutoSize = True
         Me.AngleOffset.Location = New System.Drawing.Point(107, 60)
-        Me.AngleOffset.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.AngleOffset.Margin = New System.Windows.Forms.Padding(2)
         Me.AngleOffset.Name = "AngleOffset"
         Me.AngleOffset.Size = New System.Drawing.Size(96, 17)
         Me.AngleOffset.TabIndex = 22
@@ -1613,7 +1612,7 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Label20)
         Me.Panel2.Location = New System.Drawing.Point(107, 2)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(148, 53)
         Me.Panel2.TabIndex = 28
@@ -1622,7 +1621,7 @@ Partial Class Form1
         '
         Me.Panel1.Controls.Add(Me.Label21)
         Me.Panel1.Location = New System.Drawing.Point(2, 2)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(100, 22)
         Me.Panel1.TabIndex = 27
@@ -1631,7 +1630,7 @@ Partial Class Form1
         '
         Me.Label21.AutoSize = True
         Me.Label21.Location = New System.Drawing.Point(4, 4)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(63, 13)
         Me.Label21.TabIndex = 26
@@ -1693,14 +1692,13 @@ Partial Class Form1
         '
         'modeldef_panel
         '
-        Me.modeldef_panel.Controls.Add(Me.Button2)
         Me.modeldef_panel.Controls.Add(Me.AngleOffset)
         Me.modeldef_panel.Controls.Add(Me.TabControl1)
         Me.modeldef_panel.Controls.Add(Me.Panel2)
         Me.modeldef_panel.Controls.Add(Me.Panel1)
         Me.modeldef_panel.Controls.Add(Me.frameindex_generator_groupbox)
         Me.modeldef_panel.Location = New System.Drawing.Point(10, 27)
-        Me.modeldef_panel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.modeldef_panel.Margin = New System.Windows.Forms.Padding(2)
         Me.modeldef_panel.Name = "modeldef_panel"
         Me.modeldef_panel.Size = New System.Drawing.Size(700, 531)
         Me.modeldef_panel.TabIndex = 30
@@ -1712,7 +1710,7 @@ Partial Class Form1
         Me.decorate_panel.Controls.Add(Me.ammo_box)
         Me.decorate_panel.Controls.Add(Me.Panel3)
         Me.decorate_panel.Location = New System.Drawing.Point(9, 27)
-        Me.decorate_panel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.decorate_panel.Margin = New System.Windows.Forms.Padding(2)
         Me.decorate_panel.Name = "decorate_panel"
         Me.decorate_panel.Size = New System.Drawing.Size(700, 531)
         Me.decorate_panel.TabIndex = 29
@@ -1730,9 +1728,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label63)
         Me.GroupBox1.Controls.Add(Me.Label64)
         Me.GroupBox1.Location = New System.Drawing.Point(356, 10)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(309, 149)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
@@ -1741,7 +1739,7 @@ Partial Class Form1
         'weapon_kickback
         '
         Me.weapon_kickback.Location = New System.Drawing.Point(64, 93)
-        Me.weapon_kickback.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.weapon_kickback.Margin = New System.Windows.Forms.Padding(2)
         Me.weapon_kickback.Name = "weapon_kickback"
         Me.weapon_kickback.Size = New System.Drawing.Size(71, 20)
         Me.weapon_kickback.TabIndex = 10
@@ -1760,7 +1758,7 @@ Partial Class Form1
         'pickup_message
         '
         Me.pickup_message.Location = New System.Drawing.Point(97, 119)
-        Me.pickup_message.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pickup_message.Margin = New System.Windows.Forms.Padding(2)
         Me.pickup_message.Name = "pickup_message"
         Me.pickup_message.Size = New System.Drawing.Size(195, 20)
         Me.pickup_message.TabIndex = 8
@@ -1778,7 +1776,7 @@ Partial Class Form1
         'weapon_radius
         '
         Me.weapon_radius.Location = New System.Drawing.Point(64, 68)
-        Me.weapon_radius.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.weapon_radius.Margin = New System.Windows.Forms.Padding(2)
         Me.weapon_radius.Name = "weapon_radius"
         Me.weapon_radius.Size = New System.Drawing.Size(71, 20)
         Me.weapon_radius.TabIndex = 6
@@ -1787,7 +1785,7 @@ Partial Class Form1
         'weapon_height
         '
         Me.weapon_height.Location = New System.Drawing.Point(64, 44)
-        Me.weapon_height.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.weapon_height.Margin = New System.Windows.Forms.Padding(2)
         Me.weapon_height.Name = "weapon_height"
         Me.weapon_height.Size = New System.Drawing.Size(71, 20)
         Me.weapon_height.TabIndex = 5
@@ -1796,7 +1794,7 @@ Partial Class Form1
         'weapon_scale
         '
         Me.weapon_scale.Location = New System.Drawing.Point(64, 18)
-        Me.weapon_scale.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.weapon_scale.Margin = New System.Windows.Forms.Padding(2)
         Me.weapon_scale.Name = "weapon_scale"
         Me.weapon_scale.Size = New System.Drawing.Size(71, 20)
         Me.weapon_scale.TabIndex = 4
@@ -1841,9 +1839,9 @@ Partial Class Form1
         Me.selection_box.Controls.Add(Me.Label56)
         Me.selection_box.Controls.Add(Me.Label57)
         Me.selection_box.Location = New System.Drawing.Point(188, 108)
-        Me.selection_box.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.selection_box.Margin = New System.Windows.Forms.Padding(2)
         Me.selection_box.Name = "selection_box"
-        Me.selection_box.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.selection_box.Padding = New System.Windows.Forms.Padding(2)
         Me.selection_box.Size = New System.Drawing.Size(153, 92)
         Me.selection_box.TabIndex = 7
         Me.selection_box.TabStop = False
@@ -1854,7 +1852,7 @@ Partial Class Form1
         Me.slot_number.FormattingEnabled = True
         Me.slot_number.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9"})
         Me.slot_number.Location = New System.Drawing.Point(64, 62)
-        Me.slot_number.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.slot_number.Margin = New System.Windows.Forms.Padding(2)
         Me.slot_number.Name = "slot_number"
         Me.slot_number.Size = New System.Drawing.Size(72, 21)
         Me.slot_number.TabIndex = 8
@@ -1863,7 +1861,7 @@ Partial Class Form1
         'slot_priority
         '
         Me.slot_priority.Location = New System.Drawing.Point(64, 39)
-        Me.slot_priority.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.slot_priority.Margin = New System.Windows.Forms.Padding(2)
         Me.slot_priority.Name = "slot_priority"
         Me.slot_priority.Size = New System.Drawing.Size(71, 20)
         Me.slot_priority.TabIndex = 12
@@ -1872,7 +1870,7 @@ Partial Class Form1
         'selection_order
         '
         Me.selection_order.Location = New System.Drawing.Point(64, 16)
-        Me.selection_order.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.selection_order.Margin = New System.Windows.Forms.Padding(2)
         Me.selection_order.Name = "selection_order"
         Me.selection_order.Size = New System.Drawing.Size(71, 20)
         Me.selection_order.TabIndex = 11
@@ -1917,9 +1915,9 @@ Partial Class Form1
         Me.ammo_box.Controls.Add(Me.Label59)
         Me.ammo_box.Controls.Add(Me.Label60)
         Me.ammo_box.Location = New System.Drawing.Point(188, 6)
-        Me.ammo_box.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ammo_box.Margin = New System.Windows.Forms.Padding(2)
         Me.ammo_box.Name = "ammo_box"
-        Me.ammo_box.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ammo_box.Padding = New System.Windows.Forms.Padding(2)
         Me.ammo_box.Size = New System.Drawing.Size(153, 93)
         Me.ammo_box.TabIndex = 6
         Me.ammo_box.TabStop = False
@@ -1930,7 +1928,7 @@ Partial Class Form1
         Me.ammo_type.FormattingEnabled = True
         Me.ammo_type.Items.AddRange(New Object() {"Clip", "Shell", "RocketAmmo", "Cell"})
         Me.ammo_type.Location = New System.Drawing.Point(64, 62)
-        Me.ammo_type.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ammo_type.Margin = New System.Windows.Forms.Padding(2)
         Me.ammo_type.Name = "ammo_type"
         Me.ammo_type.Size = New System.Drawing.Size(72, 21)
         Me.ammo_type.TabIndex = 2
@@ -1939,7 +1937,7 @@ Partial Class Form1
         'ammo_use
         '
         Me.ammo_use.Location = New System.Drawing.Point(64, 39)
-        Me.ammo_use.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ammo_use.Margin = New System.Windows.Forms.Padding(2)
         Me.ammo_use.Name = "ammo_use"
         Me.ammo_use.Size = New System.Drawing.Size(71, 20)
         Me.ammo_use.TabIndex = 6
@@ -1948,7 +1946,7 @@ Partial Class Form1
         'ammo_give
         '
         Me.ammo_give.Location = New System.Drawing.Point(64, 16)
-        Me.ammo_give.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ammo_give.Margin = New System.Windows.Forms.Padding(2)
         Me.ammo_give.Name = "ammo_give"
         Me.ammo_give.Size = New System.Drawing.Size(71, 20)
         Me.ammo_give.TabIndex = 5
@@ -1989,7 +1987,7 @@ Partial Class Form1
         Me.Panel3.Controls.Add(Me.bob_groupbox_check)
         Me.Panel3.Controls.Add(Me.bob_groupbox)
         Me.Panel3.Location = New System.Drawing.Point(5, 6)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(161, 177)
         Me.Panel3.TabIndex = 2
@@ -1998,7 +1996,7 @@ Partial Class Form1
         '
         Me.bob_groupbox_check.AutoSize = True
         Me.bob_groupbox_check.Location = New System.Drawing.Point(2, 3)
-        Me.bob_groupbox_check.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bob_groupbox_check.Margin = New System.Windows.Forms.Padding(2)
         Me.bob_groupbox_check.Name = "bob_groupbox_check"
         Me.bob_groupbox_check.Size = New System.Drawing.Size(74, 17)
         Me.bob_groupbox_check.TabIndex = 1
@@ -2017,9 +2015,9 @@ Partial Class Form1
         Me.bob_groupbox.Controls.Add(Me.Label52)
         Me.bob_groupbox.Controls.Add(Me.Label51)
         Me.bob_groupbox.Location = New System.Drawing.Point(2, 28)
-        Me.bob_groupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bob_groupbox.Margin = New System.Windows.Forms.Padding(2)
         Me.bob_groupbox.Name = "bob_groupbox"
-        Me.bob_groupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bob_groupbox.Padding = New System.Windows.Forms.Padding(2)
         Me.bob_groupbox.Size = New System.Drawing.Size(153, 144)
         Me.bob_groupbox.TabIndex = 0
         Me.bob_groupbox.TabStop = False
@@ -2029,7 +2027,7 @@ Partial Class Form1
         '
         Me.bob_inverse.AutoSize = True
         Me.bob_inverse.Location = New System.Drawing.Point(64, 115)
-        Me.bob_inverse.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bob_inverse.Margin = New System.Windows.Forms.Padding(2)
         Me.bob_inverse.Name = "bob_inverse"
         Me.bob_inverse.Size = New System.Drawing.Size(61, 17)
         Me.bob_inverse.TabIndex = 7
@@ -2041,7 +2039,7 @@ Partial Class Form1
         Me.bob_style.FormattingEnabled = True
         Me.bob_style.Items.AddRange(New Object() {"Normal", "Alpha", "Smooth"})
         Me.bob_style.Location = New System.Drawing.Point(64, 89)
-        Me.bob_style.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bob_style.Margin = New System.Windows.Forms.Padding(2)
         Me.bob_style.Name = "bob_style"
         Me.bob_style.Size = New System.Drawing.Size(72, 21)
         Me.bob_style.TabIndex = 2
@@ -2050,7 +2048,7 @@ Partial Class Form1
         'bob_speed
         '
         Me.bob_speed.Location = New System.Drawing.Point(64, 67)
-        Me.bob_speed.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bob_speed.Margin = New System.Windows.Forms.Padding(2)
         Me.bob_speed.Name = "bob_speed"
         Me.bob_speed.Size = New System.Drawing.Size(71, 20)
         Me.bob_speed.TabIndex = 6
@@ -2059,7 +2057,7 @@ Partial Class Form1
         'bob_rangey
         '
         Me.bob_rangey.Location = New System.Drawing.Point(64, 44)
-        Me.bob_rangey.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bob_rangey.Margin = New System.Windows.Forms.Padding(2)
         Me.bob_rangey.Name = "bob_rangey"
         Me.bob_rangey.Size = New System.Drawing.Size(71, 20)
         Me.bob_rangey.TabIndex = 5
@@ -2068,7 +2066,7 @@ Partial Class Form1
         'bob_rangex
         '
         Me.bob_rangex.Location = New System.Drawing.Point(64, 18)
-        Me.bob_rangex.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bob_rangex.Margin = New System.Windows.Forms.Padding(2)
         Me.bob_rangex.Name = "bob_rangex"
         Me.bob_rangex.Size = New System.Drawing.Size(71, 20)
         Me.bob_rangex.TabIndex = 4
@@ -2117,7 +2115,7 @@ Partial Class Form1
         'RichTextBox2
         '
         Me.RichTextBox2.Location = New System.Drawing.Point(14, 284)
-        Me.RichTextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RichTextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.Size = New System.Drawing.Size(678, 236)
         Me.RichTextBox2.TabIndex = 10
@@ -2130,7 +2128,7 @@ Partial Class Form1
         Me.anteprima_panel.Controls.Add(Me.RichTextBox1)
         Me.anteprima_panel.Controls.Add(Me.RichTextBox2)
         Me.anteprima_panel.Location = New System.Drawing.Point(9, 27)
-        Me.anteprima_panel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.anteprima_panel.Margin = New System.Windows.Forms.Padding(2)
         Me.anteprima_panel.Name = "anteprima_panel"
         Me.anteprima_panel.Size = New System.Drawing.Size(700, 531)
         Me.anteprima_panel.TabIndex = 32
@@ -2155,15 +2153,6 @@ Partial Class Form1
         Me.Label66.TabIndex = 11
         Me.Label66.Text = "Decorate"
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(107, 161)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 29
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2175,7 +2164,7 @@ Partial Class Form1
         Me.Controls.Add(Me.decorate_panel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "SUPERPROGRAMMA"
         Me.TabControl1.ResumeLayout(False)
@@ -2461,5 +2450,4 @@ Partial Class Form1
     Friend WithEvents anteprima_panel As Panel
     Friend WithEvents Label67 As Label
     Friend WithEvents Label66 As Label
-    Friend WithEvents Button2 As Button
 End Class
