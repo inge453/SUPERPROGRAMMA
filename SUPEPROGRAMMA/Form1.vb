@@ -35,45 +35,45 @@ Public Class Form1
     End Sub
 
 
-    Private Sub PictureBox2_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox2.DragDrop
+    Private Sub PictureBox2_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox2.Image = Image.FromFile(droppedFiles(0))
+        sf0_normal.Image = Image.FromFile(droppedFiles(0))
         img(1) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox3_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox3.DragEnter
+    Private Sub PictureBox3_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_metallic.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox3_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox3.DragDrop
+    Private Sub PictureBox3_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox3.Image = Image.FromFile(droppedFiles(0))
+        sf0_metallic.Image = Image.FromFile(droppedFiles(0))
         img(2) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox4_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox4.DragEnter
+    Private Sub PictureBox4_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_roughness.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox4_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox4.DragDrop
+    Private Sub PictureBox4_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox4.Image = Image.FromFile(droppedFiles(0))
+        sf0_roughness.Image = Image.FromFile(droppedFiles(0))
         img(3) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox5_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox5.DragEnter
+    Private Sub PictureBox5_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_ao.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox5_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox5.DragDrop
+    Private Sub PictureBox5_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox5.Image = Image.FromFile(droppedFiles(0))
+        sf0_ao.Image = Image.FromFile(droppedFiles(0))
         img(4) = droppedFiles(0)
     End Sub
     Private Sub PictureBox6_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin1.DragEnter
@@ -89,53 +89,53 @@ Public Class Form1
         img(5) = droppedFiles(0)
     End Sub
 
-    Private Sub PictureBox7_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox7.DragEnter
+    Private Sub PictureBox7_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_ao.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox7_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox7.DragDrop
+    Private Sub PictureBox7_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox7.Image = Image.FromFile(droppedFiles(0))
+        sf1_ao.Image = Image.FromFile(droppedFiles(0))
         img(6) = droppedFiles(0)
 
     End Sub
-    Private Sub PictureBox8_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox8.DragEnter
+    Private Sub PictureBox8_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_normal.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox8_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox8.DragDrop
+    Private Sub PictureBox8_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox8.Image = Image.FromFile(droppedFiles(0))
+        sf1_normal.Image = Image.FromFile(droppedFiles(0))
         img(7) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox9_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox9.DragEnter
+    Private Sub PictureBox9_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_roughness.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox9_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox9.DragDrop
+    Private Sub PictureBox9_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox9.Image = Image.FromFile(droppedFiles(0))
+        sf1_roughness.Image = Image.FromFile(droppedFiles(0))
         img(8) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox10_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox10.DragEnter
+    Private Sub PictureBox10_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_metallic.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox10_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox10.DragDrop
+    Private Sub PictureBox10_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox10.Image = Image.FromFile(droppedFiles(0))
+        sf1_metallic.Image = Image.FromFile(droppedFiles(0))
         img(9) = droppedFiles(0)
     End Sub
     Private Sub PictureBox11_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin2.DragEnter
@@ -150,52 +150,52 @@ Public Class Form1
         SurfaceSkin2.Image = Image.FromFile(droppedFiles(0))
         img(10) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox12_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox12.DragEnter
+    Private Sub PictureBox12_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_ao.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox12_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox12.DragDrop
+    Private Sub PictureBox12_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox12.Image = Image.FromFile(droppedFiles(0))
+        sf2_ao.Image = Image.FromFile(droppedFiles(0))
         img(11) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox13_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox13.DragEnter
+    Private Sub PictureBox13_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_normal.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox13_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox13.DragDrop
+    Private Sub PictureBox13_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox13.Image = Image.FromFile(droppedFiles(0))
+        sf2_normal.Image = Image.FromFile(droppedFiles(0))
         img(12) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox14_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox14.DragEnter
+    Private Sub PictureBox14_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_roughness.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox14_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox14.DragDrop
+    Private Sub PictureBox14_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox14.Image = Image.FromFile(droppedFiles(0))
+        sf2_roughness.Image = Image.FromFile(droppedFiles(0))
         img(13) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox15_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox15.DragEnter
+    Private Sub PictureBox15_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_metallic.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox15_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox15.DragDrop
+    Private Sub PictureBox15_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox15.Image = Image.FromFile(droppedFiles(0))
+        sf2_metallic.Image = Image.FromFile(droppedFiles(0))
         img(14) = droppedFiles(0)
     End Sub
     Private Sub PictureBox16_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin3.DragEnter
@@ -210,52 +210,52 @@ Public Class Form1
         SurfaceSkin3.Image = Image.FromFile(droppedFiles(0))
         img(15) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox17_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox17.DragEnter
+    Private Sub PictureBox17_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_ao.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox17_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox17.DragDrop
+    Private Sub PictureBox17_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox17.Image = Image.FromFile(droppedFiles(0))
+        sf3_ao.Image = Image.FromFile(droppedFiles(0))
         img(16) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox18_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox18.DragEnter
+    Private Sub PictureBox18_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_normal.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox18_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox18.DragDrop
+    Private Sub PictureBox18_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox18.Image = Image.FromFile(droppedFiles(0))
+        sf3_normal.Image = Image.FromFile(droppedFiles(0))
         img(17) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox19_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox19.DragEnter
+    Private Sub PictureBox19_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_roughness.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox19_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox19.DragDrop
+    Private Sub PictureBox19_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox19.Image = Image.FromFile(droppedFiles(0))
+        sf3_roughness.Image = Image.FromFile(droppedFiles(0))
         img(18) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox20_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox20.DragEnter
+    Private Sub PictureBox20_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_metallic.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox20_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox20.DragDrop
+    Private Sub PictureBox20_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox20.Image = Image.FromFile(droppedFiles(0))
+        sf3_metallic.Image = Image.FromFile(droppedFiles(0))
         img(19) = droppedFiles(0)
     End Sub
     Private Sub PictureBox21_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin4.DragEnter
@@ -270,52 +270,52 @@ Public Class Form1
         SurfaceSkin4.Image = Image.FromFile(droppedFiles(0))
         img(20) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox22_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox22.DragEnter
+    Private Sub PictureBox22_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_ao.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox22_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox22.DragDrop
+    Private Sub PictureBox22_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox22.Image = Image.FromFile(droppedFiles(0))
+        sf4_ao.Image = Image.FromFile(droppedFiles(0))
         img(21) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox23_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox23.DragEnter
+    Private Sub PictureBox23_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_normal.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
-    Private Sub PictureBox23_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox23.DragDrop
+    Private Sub PictureBox23_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox23.Image = Image.FromFile(droppedFiles(0))
+        sf4_normal.Image = Image.FromFile(droppedFiles(0))
         img(22) = droppedFiles(0)
 
     End Sub
-    Private Sub PictureBox24_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox24.DragEnter
+    Private Sub PictureBox24_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_roughness.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox24_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox24.DragDrop
+    Private Sub PictureBox24_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox24.Image = Image.FromFile(droppedFiles(0))
+        sf4_roughness.Image = Image.FromFile(droppedFiles(0))
         img(23) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox25_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox25.DragEnter
+    Private Sub PictureBox25_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_metallic.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox25_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox25.DragDrop
+    Private Sub PictureBox25_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox25.Image = Image.FromFile(droppedFiles(0))
+        sf4_metallic.Image = Image.FromFile(droppedFiles(0))
         img(24) = droppedFiles(0)
     End Sub
     Private Sub PictureBox26_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin5.DragEnter
@@ -332,51 +332,51 @@ Public Class Form1
 
 
     End Sub
-    Private Sub PictureBox27_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox27.DragEnter
+    Private Sub PictureBox27_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_ao.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox27_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox27.DragDrop
+    Private Sub PictureBox27_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox27.Image = Image.FromFile(droppedFiles(0))
+        sf5_ao.Image = Image.FromFile(droppedFiles(0))
         img(26) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox28_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox28.DragEnter
+    Private Sub PictureBox28_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_normal.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox28_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox28.DragDrop
+    Private Sub PictureBox28_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox28.Image = Image.FromFile(droppedFiles(0))
+        sf5_normal.Image = Image.FromFile(droppedFiles(0))
         img(27) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox29_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox29.DragEnter
+    Private Sub PictureBox29_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_roughness.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
 
-    Private Sub PictureBox29_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox29.DragDrop
+    Private Sub PictureBox29_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox29.Image = Image.FromFile(droppedFiles(0))
+        sf5_roughness.Image = Image.FromFile(droppedFiles(0))
         img(28) = droppedFiles(0)
     End Sub
-    Private Sub PictureBox30_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox30.DragEnter
+    Private Sub PictureBox30_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_metallic.DragEnter
 
         If e.Data.GetDataPresent(DataFormats.FileDrop, False) = True Then
             e.Effect = DragDropEffects.All
         End If
     End Sub
-    Private Sub PictureBox30_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles PictureBox30.DragDrop
+    Private Sub PictureBox30_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
-        PictureBox30.Image = Image.FromFile(droppedFiles(0))
+        sf5_metallic.Image = Image.FromFile(droppedFiles(0))
         img(29) = droppedFiles(0)
     End Sub
 
@@ -577,22 +577,22 @@ Public Class Form1
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox2
+        With sf0_normal
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox3
+        With sf0_metallic
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox4
+        With sf0_roughness
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox5
+        With sf0_ao
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
@@ -603,22 +603,22 @@ Public Class Form1
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox7
+        With sf1_ao
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox8
+        With sf1_normal
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox9
+        With sf1_roughness
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox10
+        With sf1_metallic
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
@@ -628,22 +628,22 @@ Public Class Form1
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox12
+        With sf2_ao
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox13
+        With sf2_normal
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox14
+        With sf2_roughness
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox15
+        With sf2_metallic
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
@@ -653,22 +653,22 @@ Public Class Form1
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox17
+        With sf3_ao
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox18
+        With sf3_normal
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox19
+        With sf3_roughness
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox20
+        With sf3_metallic
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
@@ -678,22 +678,22 @@ Public Class Form1
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox22
+        With sf4_ao
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox23
+        With sf4_normal
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox24
+        With sf4_roughness
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox25
+        With sf4_metallic
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
@@ -703,22 +703,22 @@ Public Class Form1
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox27
+        With sf5_ao
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox28
+        With sf5_normal
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox29
+        With sf5_roughness
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
         End With
-        With PictureBox30
+        With sf5_metallic
             .AllowDrop = True
             .BorderStyle = BorderStyle.FixedSingle
             .SizeMode = PictureBoxSizeMode.StretchImage
@@ -1074,6 +1074,14 @@ Public Class Form1
         genera_textureslump = res
     End Function
 
+    Function genera_gldef() As String
+        Dim res As String = ""
+
+        If sf0_normal.Image Is Nothing Then
+
+        End If
+    End Function
+
     Private Sub AnteprimeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnteprimeToolStripMenuItem.Click
         anteprima_panel.Enabled = True
         anteprima_panel.Visible = True
@@ -1085,5 +1093,7 @@ Public Class Form1
         genera_modeldef(False)
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
+    End Sub
 End Class
