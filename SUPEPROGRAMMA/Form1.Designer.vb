@@ -1594,7 +1594,7 @@ Partial Class Form1
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1253, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1253, 30)
         Me.MenuStrip1.TabIndex = 27
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -2092,9 +2092,9 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1253, 743)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.decorate_panel)
         Me.Controls.Add(Me.modeldef_panel)
         Me.Controls.Add(Me.anteprima_panel)
+        Me.Controls.Add(Me.decorate_panel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
