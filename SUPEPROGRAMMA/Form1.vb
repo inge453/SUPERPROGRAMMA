@@ -4,6 +4,10 @@ Imports System.Text
 Imports System.IO.Compression
 
 Public Class Form1
+    Private Const AO = 4
+    Private Const Roughness = 3
+    Private Const Metallic = 2
+    Private Const Normal = 1
     Dim percorso_md3 As String = ""
     Dim quote As String = Chr(34)
     Dim cartella As String
@@ -48,7 +52,7 @@ Public Class Form1
     Private Sub PictureBox2_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf0_normal.Image = Image.FromFile(droppedFiles(0))
-        sf0(1) = droppedFiles(0)
+        sf0(Normal) = droppedFiles(0)
     End Sub
 
     Private Sub PictureBox3_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_metallic.DragEnter
@@ -59,7 +63,7 @@ Public Class Form1
     Private Sub PictureBox3_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf0_metallic.Image = Image.FromFile(droppedFiles(0))
-        sf0(2) = droppedFiles(0)
+        sf0(Metallic) = droppedFiles(0)
     End Sub
 
     Private Sub PictureBox4_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_roughness.DragEnter
@@ -70,7 +74,7 @@ Public Class Form1
     Private Sub PictureBox4_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf0_roughness.Image = Image.FromFile(droppedFiles(0))
-        sf0(3) = droppedFiles(0)
+        sf0(Roughness) = droppedFiles(0)
     End Sub
 
     Private Sub PictureBox5_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_ao.DragEnter
@@ -81,7 +85,7 @@ Public Class Form1
     Private Sub PictureBox5_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf0_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf0_ao.Image = Image.FromFile(droppedFiles(0))
-        sf0(4) = droppedFiles(0)
+        sf0(AO) = droppedFiles(0)
     End Sub
 
     Private Sub PictureBox6_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin1.DragEnter
@@ -105,7 +109,7 @@ Public Class Form1
     Private Sub PictureBox7_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf1_ao.Image = Image.FromFile(droppedFiles(0))
-        sf1(4) = droppedFiles(0)
+        sf1(AO) = droppedFiles(0)
     End Sub
 
     Private Sub PictureBox8_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_normal.DragEnter
@@ -118,7 +122,7 @@ Public Class Form1
     Private Sub PictureBox8_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf1_normal.Image = Image.FromFile(droppedFiles(0))
-        sf1(1) = droppedFiles(0)
+        sf1(Normal) = droppedFiles(0)
     End Sub
     Private Sub PictureBox9_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_roughness.DragEnter
 
@@ -130,7 +134,7 @@ Public Class Form1
     Private Sub PictureBox9_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf1_roughness.Image = Image.FromFile(droppedFiles(0))
-        sf1(3) = droppedFiles(0)
+        sf1(Roughness) = droppedFiles(0)
     End Sub
     Private Sub PictureBox10_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_metallic.DragEnter
 
@@ -142,7 +146,7 @@ Public Class Form1
     Private Sub PictureBox10_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf1_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf1_metallic.Image = Image.FromFile(droppedFiles(0))
-        sf1(2) = droppedFiles(0)
+        sf1(Metallic) = droppedFiles(0)
     End Sub
     Private Sub PictureBox11_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin2.DragEnter
 
@@ -166,7 +170,7 @@ Public Class Form1
     Private Sub PictureBox12_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf2_ao.Image = Image.FromFile(droppedFiles(0))
-        sf2(1) = droppedFiles(0)
+        sf2(AO) = droppedFiles(0)
     End Sub
     Private Sub PictureBox13_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_normal.DragEnter
 
@@ -178,7 +182,7 @@ Public Class Form1
     Private Sub PictureBox13_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf2_normal.Image = Image.FromFile(droppedFiles(0))
-        sf2(2) = droppedFiles(0)
+        sf2(Normal) = droppedFiles(0)
     End Sub
     Private Sub PictureBox14_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_roughness.DragEnter
 
@@ -190,7 +194,7 @@ Public Class Form1
     Private Sub PictureBox14_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf2_roughness.Image = Image.FromFile(droppedFiles(0))
-        sf2(3) = droppedFiles(0)
+        sf2(Roughness) = droppedFiles(0)
     End Sub
     Private Sub PictureBox15_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_metallic.DragEnter
 
@@ -202,7 +206,7 @@ Public Class Form1
     Private Sub PictureBox15_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf2_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf2_metallic.Image = Image.FromFile(droppedFiles(0))
-        sf2(4) = droppedFiles(0)
+        sf2(Metallic) = droppedFiles(0)
     End Sub
     Private Sub PictureBox16_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin3.DragEnter
 
@@ -226,7 +230,7 @@ Public Class Form1
     Private Sub PictureBox17_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf3_ao.Image = Image.FromFile(droppedFiles(0))
-        sf3(1) = droppedFiles(0)
+        sf3(AO) = droppedFiles(0)
     End Sub
     Private Sub PictureBox18_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_normal.DragEnter
 
@@ -238,7 +242,7 @@ Public Class Form1
     Private Sub PictureBox18_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf3_normal.Image = Image.FromFile(droppedFiles(0))
-        sf3(2) = droppedFiles(0)
+        sf3(Normal) = droppedFiles(0)
     End Sub
     Private Sub PictureBox19_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_roughness.DragEnter
 
@@ -250,7 +254,7 @@ Public Class Form1
     Private Sub PictureBox19_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf3_roughness.Image = Image.FromFile(droppedFiles(0))
-        sf3(3) = droppedFiles(0)
+        sf3(Roughness) = droppedFiles(0)
     End Sub
     Private Sub PictureBox20_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_metallic.DragEnter
 
@@ -262,7 +266,7 @@ Public Class Form1
     Private Sub PictureBox20_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf3_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf3_metallic.Image = Image.FromFile(droppedFiles(0))
-        sf3(4) = droppedFiles(0)
+        sf3(Metallic) = droppedFiles(0)
     End Sub
     Private Sub PictureBox21_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin4.DragEnter
 
@@ -286,7 +290,7 @@ Public Class Form1
     Private Sub PictureBox22_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf4_ao.Image = Image.FromFile(droppedFiles(0))
-        sf4(1) = droppedFiles(0)
+        sf4(AO) = droppedFiles(0)
     End Sub
     Private Sub PictureBox23_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_normal.DragEnter
 
@@ -297,7 +301,7 @@ Public Class Form1
     Private Sub PictureBox23_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf4_normal.Image = Image.FromFile(droppedFiles(0))
-        sf4(2) = droppedFiles(0)
+        sf4(Normal) = droppedFiles(0)
 
     End Sub
     Private Sub PictureBox24_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_roughness.DragEnter
@@ -310,7 +314,7 @@ Public Class Form1
     Private Sub PictureBox24_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf4_roughness.Image = Image.FromFile(droppedFiles(0))
-        sf4(3) = droppedFiles(0)
+        sf4(Roughness) = droppedFiles(0)
     End Sub
     Private Sub PictureBox25_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_metallic.DragEnter
 
@@ -322,7 +326,7 @@ Public Class Form1
     Private Sub PictureBox25_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf4_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf4_metallic.Image = Image.FromFile(droppedFiles(0))
-        sf4(4) = droppedFiles(0)
+        sf4(Metallic) = droppedFiles(0)
     End Sub
     Private Sub PictureBox26_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles SurfaceSkin5.DragEnter
 
@@ -348,7 +352,7 @@ Public Class Form1
     Private Sub PictureBox27_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_ao.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf5_ao.Image = Image.FromFile(droppedFiles(0))
-        sf5(1) = droppedFiles(0)
+        sf5(AO) = droppedFiles(0)
     End Sub
     Private Sub PictureBox28_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_normal.DragEnter
 
@@ -360,7 +364,7 @@ Public Class Form1
     Private Sub PictureBox28_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_normal.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf5_normal.Image = Image.FromFile(droppedFiles(0))
-        sf5(2) = droppedFiles(0)
+        sf5(Normal) = droppedFiles(0)
     End Sub
     Private Sub PictureBox29_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_roughness.DragEnter
 
@@ -372,7 +376,7 @@ Public Class Form1
     Private Sub PictureBox29_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_roughness.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf5_roughness.Image = Image.FromFile(droppedFiles(0))
-        sf5(3) = droppedFiles(0)
+        sf5(Roughness) = droppedFiles(0)
     End Sub
     Private Sub PictureBox30_DragEnter(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_metallic.DragEnter
 
@@ -383,7 +387,7 @@ Public Class Form1
     Private Sub PictureBox30_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles sf5_metallic.DragDrop
         Dim droppedFiles As String() = e.Data.GetData(DataFormats.FileDrop)
         sf5_metallic.Image = Image.FromFile(droppedFiles(0))
-        sf5(4) = droppedFiles(0)
+        sf5(Metallic) = droppedFiles(0)
     End Sub
 
 
@@ -807,7 +811,7 @@ Public Class Form1
 
             Directory.CreateDirectory(cartella)
             Directory.CreateDirectory(cartella + "\Models")
-            Directory.CreateDirectory(cartella + "\Texture")
+            Directory.CreateDirectory(cartella + "\textures")
             If percorso_md3 <> "" Then
                 File.Copy(percorso_md3, cartella + "\Models\" + Path.GetFileName(percorso_md3))
             End If
@@ -828,6 +832,12 @@ Public Class Form1
             Dim texInfo As Byte() = New UTF8Encoding(True).GetBytes(genera_textureslump())
             textures.Write(texInfo, 0, texInfo.Length)
             textures.Close()
+
+            genera_gldef(True)
+            Dim gldefs As FileStream = File.Create(cartella + "\gldefs")
+            Dim glInfo As Byte() = New UTF8Encoding(True).GetBytes(RichTextBox3.Text)
+            gldefs.Write(glInfo, 0, glInfo.Length)
+            gldefs.Close()
 
             If File.Exists(percorso_pk3) Then
                 File.Delete(percorso_pk3)
@@ -854,7 +864,7 @@ Public Class Form1
 
             Directory.CreateDirectory(cartella)
             Directory.CreateDirectory(cartella + "\Models")
-            Directory.CreateDirectory(cartella + "\Texture")
+            Directory.CreateDirectory(cartella + "\textures")
             If percorso_md3 <> "" Then
                 File.Copy(percorso_md3, cartella + "\Models\" + Path.GetFileName(percorso_md3))
             End If
@@ -875,6 +885,12 @@ Public Class Form1
             Dim texInfo As Byte() = New UTF8Encoding(True).GetBytes(genera_textureslump())
             textures.Write(texInfo, 0, texInfo.Length)
             textures.Close()
+
+            genera_gldef(True)
+            Dim gldefs As FileStream = File.Create(cartella + "\gldefs")
+            Dim glInfo As Byte() = New UTF8Encoding(True).GetBytes(RichTextBox3.Text)
+            gldefs.Write(glInfo, 0, glInfo.Length)
+            gldefs.Close()
 
 
             If File.Exists(percorso_pk3) Then
@@ -922,7 +938,7 @@ Public Class Form1
             RichTextBox1.AppendText("Path " + quote + "Texture" + quote + vbCrLf)
             RichTextBox1.AppendText("SurfaceSkin 0 0 " + quote + IO.Path.GetFileName(sf0(0)) + quote + vbCrLf)
             If copia = True Then
-                File.Copy(sf0(0), cartella + "\Texture\" + Path.GetFileName(sf0(0)))
+                File.Copy(sf0(0), cartella + "\textures\" + Path.GetFileName(sf0(0)))
             End If
 
 
@@ -930,31 +946,31 @@ Public Class Form1
         If sf1(0) <> "" Then
             RichTextBox1.AppendText("SurfaceSkin 0 1 " + quote + IO.Path.GetFileName(sf1(0)) + quote + vbCrLf)
             If copia = True Then
-                File.Copy(sf1(0), cartella + "\Texture\" + Path.GetFileName(sf1(0)))
+                File.Copy(sf1(0), cartella + "\textures\" + Path.GetFileName(sf1(0)))
             End If
         End If
         If sf2(0) <> "" Then
             RichTextBox1.AppendText("SurfaceSkin 0 2 " + quote + IO.Path.GetFileName(sf2(0)) + quote + vbCrLf)
             If copia = True Then
-                File.Copy(sf2(0), cartella + "\Texture\" + Path.GetFileName(sf2(0)))
+                File.Copy(sf2(0), cartella + "\textures\" + Path.GetFileName(sf2(0)))
             End If
         End If
         If sf3(0) <> "" Then
             RichTextBox1.AppendText("SurfaceSkin 0 3 " + quote + IO.Path.GetFileName(sf3(0)) + quote + vbCrLf)
             If copia = True Then
-                File.Copy(sf3(0), cartella + "\Texture\" + Path.GetFileName(sf3(0)))
+                File.Copy(sf3(0), cartella + "\textures\" + Path.GetFileName(sf3(0)))
             End If
         End If
         If sf4(0) <> "" Then
             RichTextBox1.AppendText("SurfaceSkin 0 4 " + quote + IO.Path.GetFileName(sf4(0)) + quote + vbCrLf)
             If copia = True Then
-                File.Copy(sf4(0), cartella + "\Texture\" + Path.GetFileName(sf4(0)))
+                File.Copy(sf4(0), cartella + "\textures\" + Path.GetFileName(sf4(0)))
             End If
         End If
         If sf5(0) <> "" Then
             RichTextBox1.AppendText("SurfaceSkin 0 5 " + quote + IO.Path.GetFileName(sf5(0)) + quote + vbCrLf)
             If copia = True Then
-                File.Copy(sf5(0), cartella + "\Texture\" + Path.GetFileName(sf5(0)))
+                File.Copy(sf5(0), cartella + "\textures\" + Path.GetFileName(sf5(0)))
             End If
         End If
         If AngleOffset.Checked = True Then
@@ -1080,28 +1096,29 @@ Public Class Form1
         genera_textureslump = res
     End Function
 
-    Function genera_materiale(ByVal skin_name As String, ByRef sf_normal As PictureBox, ByRef sf_metallic As PictureBox, ByRef sf_roughness As PictureBox, ByRef sf_ao As PictureBox, ByRef surf As String()) As String
+
+    Function genera_materiale2(ByRef surf As String()) As String
         Dim res As String = ""
 
-        res = res + "material texture " + quote + "Texture/" + skin_name + quote + vbCrLf + "{" + vbCrLf
+        res = res + "material texture " + quote + "textures/" + Path.GetFileName(surf(0)) + quote + vbCrLf + "{" + vbCrLf
 
-        If sf_normal.Image IsNot Nothing Then
-            res = res + "normal " + quote + "Texture/" + skin_name + "_normal." + Path.GetExtension(surf(1)) + quote + vbCrLf
+        If surf(Normal) <> "" Then
+            res = res + "normal " + quote + "textures/" + Path.GetFileNameWithoutExtension(surf(0)) + "_normal" + Path.GetExtension(surf(1)) + quote + vbCrLf
         End If
 
-        If sf_metallic.Image IsNot Nothing Then
-            res = res + "metallic " + quote + "Texture/" + skin_name + "_metallic." + Path.GetExtension(surf(2)) + quote + vbCrLf
+        If surf(Metallic) <> "" Then
+            res = res + "metallic " + quote + "textures/" + Path.GetFileNameWithoutExtension(surf(0)) + "_metallic" + Path.GetExtension(surf(2)) + quote + vbCrLf
         End If
 
-        If sf_roughness.Image IsNot Nothing Then
-            res = res + "roughness " + quote + "Texture/" + skin_name + "_roughness." + Path.GetExtension(surf(3)) + quote + vbCrLf
+        If surf(Roughness) <> "" Then
+            res = res + "roughness " + quote + "textures/" + Path.GetFileNameWithoutExtension(surf(0)) + "_roughness" + Path.GetExtension(surf(3)) + quote + vbCrLf
         End If
 
-        If sf_metallic.Image IsNot Nothing Then
-            res = res + "ao " + quote + "Texture/" + skin_name + "_ao." + Path.GetExtension(surf(4)) + quote + vbCrLf
+        If surf(AO) <> "" Then
+            res = res + "ao " + quote + "textures/" + Path.GetFileNameWithoutExtension(surf(0)) + "_ao" + Path.GetExtension(surf(4)) + quote + vbCrLf
         End If
-
-        genera_materiale = res
+        res = res + vbCrLf + "}" + vbCrLf
+        genera_materiale2 = res
     End Function
 
     Private Sub AnteprimeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnteprimeToolStripMenuItem.Click
@@ -1113,6 +1130,63 @@ Public Class Form1
         modeldef_panel.Visible = False
         genera_decorate()
         genera_modeldef(False)
+        genera_gldef(False)
     End Sub
 
+    Function genera_gldef(ByVal copia As Boolean)
+        If (sf0(Normal) <> "") And (sf0(Metallic) <> "") And (sf0(AO) <> "") And (sf0(Roughness) <> "") Then
+            RichTextBox3.AppendText(genera_materiale2(sf0))
+            If copia = True Then
+                File.Copy(sf0(Normal), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_normal" + Path.GetExtension(sf0(Normal)))
+                File.Copy(sf0(Roughness), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_roughness" + Path.GetExtension(sf0(Roughness)))
+                File.Copy(sf0(Metallic), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_metallic" + Path.GetExtension(sf0(Metallic)))
+                File.Copy(sf0(AO), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_ao" + Path.GetExtension(sf0(AO)))
+            End If
+        End If
+        If (sf1(Normal) <> "") And (sf1(Metallic) <> "") And (sf1(AO) <> "") And (sf1(Roughness) <> "") Then
+            RichTextBox3.AppendText(genera_materiale2(sf1))
+            If copia = True Then
+                File.Copy(sf1(Normal), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_normal" + Path.GetExtension(sf1(Normal)))
+                File.Copy(sf1(Roughness), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_roughness" + Path.GetExtension(sf1(Roughness)))
+                File.Copy(sf1(Metallic), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_metallic" + Path.GetExtension(sf1(Metallic)))
+                File.Copy(sf1(AO), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_ao" + Path.GetExtension(sf1(AO)))
+            End If
+        End If
+        If (sf2(Normal) <> "") And (sf2(Metallic) <> "") And (sf2(AO) <> "") And (sf2(Roughness) <> "") Then
+            RichTextBox3.AppendText(genera_materiale2(sf2))
+            If copia = True Then
+                File.Copy(sf2(Normal), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_normal" + Path.GetExtension(sf2(Normal)))
+                File.Copy(sf2(Roughness), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_roughness" + Path.GetExtension(sf2(Roughness)))
+                File.Copy(sf2(Metallic), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_metallic" + Path.GetExtension(sf2(Metallic)))
+                File.Copy(sf2(AO), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_ao" + Path.GetExtension(sf2(AO)))
+            End If
+        End If
+        If (sf3(Normal) <> "") And (sf3(Metallic) <> "") And (sf3(AO) <> "") And (sf3(Roughness) <> "") Then
+            RichTextBox3.AppendText(genera_materiale2(sf3))
+            If copia = True Then
+                File.Copy(sf3(Normal), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_normal" + Path.GetExtension(sf3(Normal)))
+                File.Copy(sf3(Roughness), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_roughness" + Path.GetExtension(sf3(Roughness)))
+                File.Copy(sf3(Metallic), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_metallic" + Path.GetExtension(sf3(Metallic)))
+                File.Copy(sf3(AO), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_ao" + Path.GetExtension(sf3(AO)))
+            End If
+        End If
+        If (sf4(Normal) <> "") And (sf4(Metallic) <> "") And (sf4(AO) <> "") And (sf4(Roughness) <> "") Then
+            RichTextBox3.AppendText(genera_materiale2(sf4))
+            If copia = True Then
+                File.Copy(sf4(Normal), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_normal" + Path.GetExtension(sf4(Normal)))
+                File.Copy(sf4(Roughness), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_roughness" + Path.GetExtension(sf4(Roughness)))
+                File.Copy(sf4(Metallic), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_metallic" + Path.GetExtension(sf4(Metallic)))
+                File.Copy(sf4(AO), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_ao" + Path.GetExtension(sf4(AO)))
+            End If
+        End If
+        If (sf5(Normal) <> "") And (sf5(Metallic) <> "") And (sf5(AO) <> "") And (sf5(Roughness) <> "") Then
+            RichTextBox3.AppendText(genera_materiale2(sf5))
+            If copia = True Then
+                File.Copy(sf5(Normal), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_normal" + Path.GetExtension(sf5(Normal)))
+                File.Copy(sf5(Roughness), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_roughness" + Path.GetExtension(sf5(Roughness)))
+                File.Copy(sf5(Metallic), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_metallic" + Path.GetExtension(sf5(Metallic)))
+                File.Copy(sf5(AO), cartella + "\textures\" + Path.GetFileNameWithoutExtension(sf0(0)) + "_ao" + Path.GetExtension(sf5(AO)))
+            End If
+        End If
+    End Function
 End Class
